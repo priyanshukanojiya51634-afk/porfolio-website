@@ -7,8 +7,16 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^13.5.0",
+    "bullmq": "^6.3.11",
+    "concurrently": "^10.0.5",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "mongoose": "^9.10.4",
+    "nodemon": "^3.1.14",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -16,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "both": "concurrently \"npm run start\" \"nodemon src/Backend-portfolio/contectdb.js\" \"nodemon src/Backend-portfolio/hireback.js\" \"nodemon src/Backend-portfolio/hirebi.js\" \"nodemon src/Backend-portfolio/worker.js\" \"nodemon src/Backend-portfolio/worker2.js\" \"nodemon src/Backend-portfolio/worker3.js\""
   },
   "eslintConfig": {
     "extends": [
