@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import chatImage from "../contect.png";
-import API_BASE_URL from "../api";
 
 function Contact() {
   const [formData, setformData] = useState({
@@ -25,7 +24,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const responce = await fetch(`${API_BASE_URL}/userrequest`, {
+      const responce = await fetch("http://localhost:5000/userrequest", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

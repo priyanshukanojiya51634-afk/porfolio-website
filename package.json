@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "both": "concurrently \"npm run start\" \"npm --prefix src/Backend-portfolio run dev\""
+    "both": "concurrently \"npm run start\" \"nodemon src/Backend-portfolio/contectdb.js\" \"nodemon src/Backend-portfolio/hireback.js\" \"nodemon src/Backend-portfolio/hirebi.js\" \"nodemon src/Backend-portfolio/worker.js\" \"nodemon src/Backend-portfolio/worker2.js\" \"nodemon src/Backend-portfolio/worker3.js\""
   },
   "eslintConfig": {
     "extends": [

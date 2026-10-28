@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import API_BASE_URL from "../api";
 
 function Hireme() {
   const [formData, setformData] = useState({
@@ -23,7 +22,7 @@ function Hireme() {
   const requestsenderp = async (e) => {
     e.preventDefault();
     try {
-      const responce = await fetch(`${API_BASE_URL}/puser`, {
+      const responce = await fetch("http://localhost:5001/puser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -47,7 +46,7 @@ function Hireme() {
   const requestsenderi = async (e) => {
     e.preventDefault();
     try {
-      const responce2 = await fetch(`${API_BASE_URL}/iuser`, {
+      const responce2 = await fetch("http://localhost:5002/iuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
