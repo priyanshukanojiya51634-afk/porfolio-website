@@ -8,7 +8,7 @@ function Skils() {
           <h2>Html5</h2>
           <img
             src="https://th.bing.com/th/id/OIP.kOSywHzu8XZ4SRAivZvzjwHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
-            alt="html image"
+            alt="HTML5"
           />
           <span className="htext">
             I have a strong understanding of HTML5 and use it to build clear,
@@ -22,7 +22,7 @@ function Skils() {
           <h2>css</h2>
           <img
             src="https://img.icons8.com/color/1200/css3.jpg"
-            alt="css image"
+            alt="CSS3"
           />
           <span className="htext">
             I use CSS to bring structure and visual style to web pages. I
@@ -35,7 +35,7 @@ function Skils() {
           <h2>javascript</h2>
           <img
             src="https://gm2k27.github.io/portfolio/public/images/js.png"
-            alt="javascript image"
+            alt="JavaScript"
           />
           <span className="htext">
             I use JavaScript to add functionality and interactivity to websites.

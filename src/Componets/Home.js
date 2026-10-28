@@ -3,6 +3,13 @@ import React, { useEffect, useState } from "react";
 import portfolioimg from "./WhatsApp Image 2026-09-24 at 17.48.41.jpeg";
 import { Link } from "react-router-dom";
 
+const words = [
+  "Fullstack devloper",
+  "Software devloper",
+  "Mernstack devloper",
+  "Web designer",
+];
+
 //Type writer animation
 function Home() {
   const [text, setText] = useState("");
@@ -11,13 +18,6 @@ function Home() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [isonline, setIsonline] = useState(navigator.onLine);
   const [showToast, setshowToast] = useState(!navigator.onLine);
-
-  const words = [
-    "Fullstack devloper",
-    "Software devloper",
-    "Mernstack devloper",
-    "Web designer",
-  ];
 
   useEffect(() => {
     const currentword = words[wordText];
@@ -117,7 +117,7 @@ function Home() {
           </div>
         </div>
         <div className="profileimg">
-          <img src={portfolioimg} alt="profile image" />
+          <img src={portfolioimg} alt="Priyanshu Kanojiya" />
         </div>
       </div>
       {/*About section  */}
