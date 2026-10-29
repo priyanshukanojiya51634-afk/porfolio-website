@@ -7,7 +7,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node hireback.js",
+    "dev": "nodemon contectdb.js",
+    "worker": "node worker.js"
   },
   "dependencies": {
     "bullmq": "^6.3.11",

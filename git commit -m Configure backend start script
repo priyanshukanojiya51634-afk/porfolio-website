@@ -1,0 +1,18 @@
+[1mdiff --git a/src/Backend-portfolio/queq.js b/src/Backend-portfolio/queq.js[m
+[1mindex b3e78a9..f800fb6 100644[m
+[1m--- a/src/Backend-portfolio/queq.js[m
+[1m+++ b/src/Backend-portfolio/queq.js[m
+[36m@@ -1,10 +1,8 @@[m
+ const { Queue } = require("bullmq");[m
+[32m+[m[32mconst createRedisConnection = require("./redisConnection");[m
+ [m
+ const requestschema = new Queue("requestQueue", {[m
+[31m-  connection: {[m
+[31m-    host: "127.0.0.1",[m
+[31m-    port: 6379,[m
+[31m-  },[m
+[32m+[m[32m  connection: createRedisConnection(),[m
+ });[m
+ [m
+ module.exports = requestschema;[m
+\ No newline at end of file[m
